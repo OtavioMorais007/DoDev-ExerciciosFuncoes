@@ -18,6 +18,9 @@ também uma função para exibir o histórico dos resultados.*/
 
 var num1 = parseInt(prompt('Insira o primeiro número: '))
 var num2 = parseInt(prompt('Insira o segundo número: '))
+var resultados = []
+var continuar = 's'
+var index = 0
 
 function Somar(num1, num2) {
     var soma = num1 + num2
@@ -39,15 +42,30 @@ function Dividr(num1, num2) {
     return divisao
 }
 
+function ExibirHistorico(){
+    console.log(resultados)
+}
+
 while(continuar == 's'){
     var operacao = prompt ('Qual operação deseja fazer? 1 - Soma, 2 - Subtracao, 3 - Multiplicação, 4 - Dividir')
     if (operacao == "1"){
+        resultados[index] = Somar(num1, num2)
+        index++
         console.log(Somar(num1, num2))
     } else if (operacao == "2"){
+        resultados[index] = Subtrair(num1, num2)
+        index++
         console.log(Subtrair(num1, num2))
     } else if (operacao == "3"){
+        resultados[index] = Multiplicao(num1, num2)
+        index++
         console.log(Multiplicao(num1, num2))
     } else if (operacao == "4"){
+        resultados[index] = Dividir(num1, num2)
+        index++
         console.log(Dividir(num1, numB))
     }
+    continuar = prompt("Deseja continuar fazendo operações? s/n")
 }
+
+ExibirHistorico();
