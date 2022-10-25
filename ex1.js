@@ -38,3 +38,16 @@ function Dividr(num1, num2) {
     var divisao = num1 / 2
     return divisao
 }
+
+while(continuar == 's'){
+    var operacao = prompt ('Qual operação deseja fazer? 1 - Soma, 2 - Subtracao, 3 - Multiplicação, 4 - Dividir')
+    if (operacao == "1"){
+        console.log(Somar(num1, num2))
+    } else if (operacao == "2"){
+        console.log(Subtrair(num1, num2))
+    } else if (operacao == "3"){
+        console.log(Multiplicao(num1, num2))
+    } else if (operacao == "4"){
+        console.log(Dividir(num1, numB))
+    }
+}
