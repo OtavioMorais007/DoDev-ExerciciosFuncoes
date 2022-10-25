@@ -25,6 +25,11 @@ function Somar(num1, num2) {
 }
 
 function Subtrair(num1, num2){
-    var subtracao = num1 + num2
+    var subtracao = num1 - num2
     return subtracao
+}
+
+function Multiplicao(num1, num2){
+    var multiplicacao = num1 * num2
+    return multiplicacao
 }
