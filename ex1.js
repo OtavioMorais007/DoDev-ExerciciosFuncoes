@@ -18,3 +18,8 @@ também uma função para exibir o histórico dos resultados.*/
 
 var num1 = parseInt(prompt('Insira o primeiro número: '))
 var num2 = parseInt(prompt('Insira o segundo número: '))
+
+function Somar(num1, num2) {
+    var soma = num1 + num2
+    return soma
+}
