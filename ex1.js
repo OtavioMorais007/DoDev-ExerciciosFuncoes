@@ -33,3 +33,8 @@ function Multiplicao(num1, num2){
     var multiplicacao = num1 * num2
     return multiplicacao
 }
+
+function Dividr(num1, num2) {
+    var divisao = num1 / 2
+    return divisao
+}
